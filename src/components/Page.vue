@@ -46,7 +46,14 @@ export default {
   mounted() {
     this.lighthouse.name = this.$robonomics.lighthouse.name;
     this.lighthouse.address = this.$robonomics.lighthouse.address;
+    this.$robonomics.onDemand(msg => {
+      console.log('demand', msg);
+    });
+    this.$robonomics.onOffer(msg => {
+      console.log('offer', msg)
+    });
     this.$robonomics.onResult(msg => {
+      console.log(msg);
       const item = this.results.find(item => item.liability === msg.liability);
       if (!item) {
         const liability = new Liability(

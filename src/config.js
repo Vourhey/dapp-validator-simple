@@ -1,12 +1,12 @@
-export const CHAIN_ID = 1;
+export const CHAIN_ID = 4451;
 export const ROBONOMICS = {
   version: 5,
-  ens: '',
-  ensSuffix: 'eth',
-  lighthouse: 'airalab.lighthouse.5.robonomics.eth'
+  ens: '0xaC4Ac4801b50b74aa3222B5Ba282FF54407B3941',
+  ensSuffix: 'sid',
+  lighthouse: 'airalab.lighthouse.5.robonomics.sid'
 };
 
-export const VALIDATOR = '0xdf5d4BE285a7E100621c20b3c90A80Ed39b1D054';
+export const VALIDATOR = '0x17B82177D8753bd8090dadA60B953CFaDD9eF492';
 
 export const IPFS_CONFIG = {
   repo: 'ipfs/robonomics',
